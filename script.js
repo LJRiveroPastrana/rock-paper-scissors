@@ -18,9 +18,8 @@ function getComputerChoice() {
     default:
       return "unknown"; 
   }
-  
 }
-const computerChoice = getComputerChoice()
+
 
 
 /*FIN getComputerChoice*/
@@ -47,11 +46,8 @@ function playRound(humanChoice,computerChoice) {
     } else {
         return "computer win"
     }
-
-   
-
 }                
-const humanChoice = getHumanChoice() 
+
 
 
 
@@ -76,8 +72,6 @@ function playGame() {
         console.log("Computer:", computerChoice);
         const humanChoice = getHumanChoice();
         console.log("Human:", humanChoice);
-        
-       
         const result = playRound(humanChoice, computerChoice);
         
         score(result);       
